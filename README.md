@@ -13,6 +13,6 @@ https://github.com/ddollar/foreman
 
 ```bash
   docker build . -t goreman
-  docker run goreman
+  docker run --name goreman -p 6379:6379 -p 80:80 -p 8000:8000 goreman
 ```
     
